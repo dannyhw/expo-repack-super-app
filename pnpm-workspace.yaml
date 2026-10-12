@@ -3,14 +3,7 @@ packages:
 
 autoInstallPeers: false
 
-# Re.Pack and the Expo integration come from local tarballs packed from the
-# callstack/repack PR #1425 branch (@callstack/repack-expo is unpublished).
 overrides:
-  "@callstack/repack": "file:./tarballs/callstack-repack-5.4.0.tgz"
-  "@callstack/repack-dev-server": "file:./tarballs/callstack-repack-dev-server-5.4.0.tgz"
-  "@callstack/repack-expo": "file:./tarballs/callstack-repack-expo-0.0.0.tgz"
-  "@callstack/repack-plugin-expo-modules": "file:./tarballs/callstack-repack-plugin-expo-modules-5.4.0.tgz"
-  "@callstack/repack-plugin-reanimated": "file:./tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz"
   "super-app-showcase-sdk": "workspace:*"
 
 allowBuilds:
@@ -34,9 +27,9 @@ catalog:
   "@types/react": ~19.2.2
   "typescript": ~6.0.3
   "@rspack/core": 2.2.8
-  "@callstack/repack": 5.4.0
-  "@callstack/repack-expo": 0.0.0
-  "@callstack/repack-plugin-reanimated": 5.4.0
+  "@callstack/repack": 5.4.2
+  "@callstack/repack-expo": 0.0.1
+  "@callstack/repack-plugin-reanimated": 5.4.2
   "@react-native-community/cli": 20.2.0
   "@module-federation/enhanced": 2.8.0
   "@react-navigation/native": 7.5.0

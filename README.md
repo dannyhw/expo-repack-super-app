@@ -4,11 +4,6 @@ An Expo version of [callstack/super-app-showcase](https://github.com/callstack/s
 built with Re.Pack (Rspack) through the `@callstack/repack-expo` integration
 from [callstack/repack#1425](https://github.com/callstack/repack/pull/1425).
 
-`@callstack/repack-expo` is unpublished, so Re.Pack and the integration are
-installed from local tarballs in `tarballs/`, packed from the PR branch. pnpm
-`overrides` in `pnpm-workspace.yaml` point every `@callstack/repack*` reference
-at them.
-
 ## Packages
 
 | Package | Role | Dev server |
@@ -43,20 +38,6 @@ On Android, forward the mini app ports to the emulator:
 for p in 8081 9001 9002 9003; do adb reverse tcp:$p tcp:$p; done
 ```
 
-### Testing other Re.Pack commits
-
-The tarballs are committed so the app works after a plain clone. To test a
-different commit of the PR, check out
-[callstack/repack](https://github.com/callstack/repack) (branch
-`feat/expo-repack-support` of `whydidoo/repack`) and repack:
-
-```sh
-scripts/pack-repack.sh ../repack
-```
-
-Restart the dev servers afterwards, and rerun `npx expo prebuild` if the
-config plugin changed.
-
 ## Differences from super-app-showcase
 
 - React Native 0.86.3 (Expo SDK 57) instead of 0.87.1, and the native libraries
@@ -77,8 +58,8 @@ config plugin changed.
 
 ## Integration issues found with this app
 
-Building this app surfaced two bugs in `@callstack/repack-expo`, both fixed on
-the PR branch and included in the tarballs:
+Building this app surfaced two bugs in `@callstack/repack-expo`, both fixed
+before the 0.0.1 release:
 
 - Every module failed with "Failed to import 'hermes-parser'" because Re.Pack
   looked for hermes-parser through `@react-native/babel-preset`, which Expo
