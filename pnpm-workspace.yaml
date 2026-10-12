@@ -3,6 +3,11 @@ packages:
 
 autoInstallPeers: false
 
+# @callstack/repack-expo 0.0.1 is newer than pnpm's minimumReleaseAge allows.
+# Remove once it has aged past the limit.
+minimumReleaseAgeExclude:
+  - "@callstack/repack-expo"
+
 overrides:
   "super-app-showcase-sdk": "workspace:*"
 
