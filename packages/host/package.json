@@ -13,6 +13,7 @@
     "@shopify/react-native-skia": "catalog:",
     "expo": "catalog:",
     "expo-asset": "catalog:",
+    "expo-build-properties": "~57.0.22",
     "expo-constants": "catalog:",
     "expo-font": "catalog:",
     "expo-splash-screen": "catalog:",

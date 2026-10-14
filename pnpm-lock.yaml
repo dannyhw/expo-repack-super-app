@@ -249,6 +249,9 @@ importers:
       expo-asset:
         specifier: 'catalog:'
         version: 57.0.18(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3)
+      expo-build-properties:
+        specifier: ~57.0.22
+        version: 57.0.22(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
       expo-constants:
         specifier: 'catalog:'
         version: 57.0.20(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
@@ -2465,6 +2468,11 @@ packages:
       expo: '*'
       react: '*'
       react-native: '*'
+
+  expo-build-properties@57.0.22:
+    resolution: {integrity: sha512-A5oRf2I02XDRu2NnqKo7Au5kUu244unvyoRMUsB+xvg/BOlsR+G/oyDFGkjbda1cJbeKm9eqposIXbA2ri5UrQ==}
+    peerDependencies:
+      expo: '*'
 
   expo-constants@57.0.20:
     resolution: {integrity: sha512-WycPVvBgbluSa6yAh6DKnX646ZHrae0gV2ZLum5fioNkR+DiWyulq1+UfS++Jc6yfAh/l55NOirv6mt5cnQhSw==}
@@ -6857,6 +6865,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - typescript
+
+  expo-build-properties@57.0.22(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3)):
+    dependencies:
+      '@expo/schema-utils': 57.0.2
+      expo: 57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3)
+      resolve-from: 5.0.0
+      semver: 7.8.5
 
   expo-constants@57.0.20(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)):
     dependencies:
